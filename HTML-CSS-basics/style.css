@@ -1,0 +1,139 @@
+:root { 
+    --primary: #007bff;
+}
+
+* {
+    font-family: 'Roboto', sans-serif; 
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card {
+    width: 300px;
+    height: 400px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.top {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-bg {
+    width: 100%;
+    height: 100px;
+    background-color: var(--primary);
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+}
+
+.profile-pic {
+    position: absolute;
+    top: 24px;
+
+    width: 100px;
+    height: 100px;
+    
+    border-radius: 50%;
+    border: 2px solid white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    background-image: url('./yoda.jpeg');
+    background-position: center;
+    background-size: cover;
+}
+
+.content {
+    padding: 16px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    height: calc(100% - 100px - 16px - 16px);
+}
+
+.user-name {
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.user-details {
+    margin-top: 8px;
+    font-size: 16px;
+}
+
+.icons-wrapper {
+    display: flex;
+    justify-content: space-around;
+
+    width: 100%;
+
+    margin-top: auto;
+    margin-bottom: 16px;
+}
+
+.icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.link-icon {
+    color: white;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon--facebook {
+    background-color: #3b5998;
+}
+
+.icon--twitter {
+    background-color: #00acee;
+}
+
+.icon--instagram {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+.icon--youtube {
+    background-color: #ff0000;
+}
+
+.buttons-wrapper {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.custom-btn {
+    padding: 8px 24px;
+    border-radius: 16px;
+    border: none;
+    background-color: var(--primary);
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.custom-btn:hover {
+    background-color: #0056b3;
+}
+
+.custom-btn:active {
+    background-color: #003366;
+}
